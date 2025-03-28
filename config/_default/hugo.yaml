@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Mahmoud Abdelsamea - Dev # Website name
-baseURL: 'obaaa8-github-io.vercel.app' # Website URL
+baseURL: 'obaaa8-github-io.vercel.apphugo mod vendor' # Website URL
 
 ############################
 ## LANGUAGE

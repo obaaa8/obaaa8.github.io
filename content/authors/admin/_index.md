@@ -3,7 +3,7 @@
 title: MAHMAOUD
 
 # Name pronunciation (optional)
-name_pronunciation: Mahmoud Eltoum
+name_pronunciation: Mahmoud ABDELSAMEA Eltoum
 
 # Full name (for SEO)
 first_name: MAHMAOUD

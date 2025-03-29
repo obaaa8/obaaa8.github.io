@@ -1,6 +1,7 @@
-<footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
-
-  <!-- {{ partial "functions/get_hook" (dict "hook" "footer-start" "context" .) }}
+<footer
+    class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200"
+>
+    {{ partial "functions/get_hook" (dict "hook" "footer-start" "context" .) }}
 
   {{/* Load footer block */}}
   {{ $footer_section_name := site.Params.footer.blox | default "minimal" }}
@@ -14,7 +15,7 @@
     {{ $is_sponsor := site.Params.i_am_a_sponsor | default false }}
     {{ $hide_published_with_footer := site.Params.power_ups.hide_published_with | default true }}
     {{ if not (and $is_sponsor $hide_published_with_footer) }}
-      {{ $default := "Published with {hugoblox} — the free, {repo_link}open source{/repo_link} website builder that empowers creators." }}
+      {{ $default := "..." }}
       {{ $i18n_published_with := i18n "published_with" | default $default }}
       {{ if not (findRE "{hugoblox}" $i18n_published_with) }}
         {{ warnf "Please attribute Hugo Blox using `{hugoblox}` in the `published_with` text." }}
@@ -25,6 +26,5 @@
       {{ $i18n_published_with = replace $i18n_published_with "{/repo_link}" "</a>" | safeHTML }}
       {{ $i18n_published_with | replaceRE "{year}" now.Year | markdownify | emojify | safeHTML }}
     {{ end }}
-  </p> -->
-
+  </p>
 </footer>
